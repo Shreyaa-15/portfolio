@@ -1,19 +1,33 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import About from "./components/About";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import MouseGlow from "./components/MouseGlow";
+import Cursor from "./components/Cursor";
+import "./styles/global.css";
 
 function App() {
   return (
-    <div>
+    <div className="relative min-h-screen overflow-x-hidden">
+      
+      {/* Effects */}
+      <Cursor />
+      <MouseGlow />
+
+      {/* Navigation */}
       <Navbar />
-      <Hero />
-      <Projects />
-      <Skills />
-      <About />
-      <Contact />
+
+      {/* Main Sections */}
+      <main className="pt-20"> 
+        <Hero />
+        <About /> 
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+
     </div>
   );
 }

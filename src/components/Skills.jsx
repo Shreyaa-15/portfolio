@@ -1,66 +1,56 @@
-import { motion } from "framer-motion";
-
-const skillsData = [
-  {
-    category: "Languages",
-    skills: ["C++", "Python", "Java", "JavaScript"],
-  },
-  {
-    category: "Backend & Systems",
-    skills: ["REST APIs", "System Design Basics", "OOP", "DBMS"],
-  },
-  {
-    category: "Tools & Platforms",
-    skills: ["Docker", "Git", "ServiceNow", "Jira", "Postman"],
-  },
-  {
-    category: "Core CS",
-    skills: ["Data Structures & Algorithms", "Operating Systems", "Networking"],
-  },
-];
-
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className="min-h-screen px-6 py-24 bg-background text-primary"
-    >
+    <section id="skills" className="px-6 md:px-20 py-28 bg-[#140800]">
+
       <div className="max-w-6xl mx-auto">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold mb-16 text-center"
-        >
-          Skills
-        </motion.h2>
+        {/* HEADER */}
+        <p className="text-gold text-xs tracking-[0.3em] uppercase mb-4">
+          Tasting Notes
+        </p>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {skillsData.map((section, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -5 }}
-              className="bg-card p-6 rounded-2xl border border-gray-800 hover:border-accent transition"
-            >
-              <h3 className="text-xl font-semibold text-accent mb-4">
-                {section.category}
-              </h3>
+        <h2 className="text-4xl md:text-5xl font-serif text-cream mb-6">
+          The <span className="italic text-gold">ingredients</span> in every brew
+        </h2>
 
-              <div className="flex flex-wrap gap-3">
-                {section.skills.map((skill, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 text-sm border border-gray-700 rounded-full hover:border-accent transition"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+        <p className="text-gray-400 max-w-2xl mb-12">
+          Every great system starts with the right fundamentals — depth-first, always.
+        </p>
+
+        {/* GRID */}
+        <div className="grid md:grid-cols-3 gap-10">
+
+          {/* Beans */}
+          <div>
+            <p className="text-xs text-gold mb-4">Beans</p>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Java / Python / C++</li>
+              <li>JavaScript / TypeScript</li>
+              <li>ServiceNow / Glide</li>
+            </ul>
+          </div>
+
+          {/* Method */}
+          <div>
+            <p className="text-xs text-gold mb-4">Method</p>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Microservices</li>
+              <li>Event-Driven Architecture</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+
+          {/* Tools */}
+          <div>
+            <p className="text-xs text-gold mb-4">Tools</p>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Docker / Kubernetes</li>
+              <li>Kafka / Redis</li>
+              <li>PostgreSQL / MongoDB</li>
+            </ul>
+          </div>
+
         </div>
-
       </div>
     </section>
   );

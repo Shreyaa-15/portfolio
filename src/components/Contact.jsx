@@ -1,55 +1,26 @@
-import { motion } from "framer-motion";
-
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="min-h-[60vh] px-6 py-24 bg-background text-primary flex items-center"
-    >
-      <div className="max-w-4xl mx-auto text-center w-full">
+    <section id="contact" className="px-6 md:px-20 py-32 text-center">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold mb-6"
-        >
-          Get in Touch
-        </motion.h2>
+      <div className="max-w-4xl mx-auto">
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="text-secondary mb-10"
-        >
-          Open to Software Engineering opportunities and meaningful projects.
-        </motion.p>
+        <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6">
+          Place Your Order
+        </p>
 
-        {/* Contact Buttons */}
-        <div className="flex flex-col md:flex-row justify-center gap-4">
+        <h2 className="text-5xl md:text-6xl font-serif text-cream mb-6">
+          Let’s brew something.
+        </h2>
 
-          <a
-            href="mailto:shrsingh0990@gmail.com"
-            className="px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition rounded-lg"
-          >
-            Email Me
-          </a>
+        <p className="text-gray-400 mb-10">
+          Currently open to FAANG & top-tier engineering roles
+        </p>
 
-          <a
-            href="https://www.linkedin.com/in/shreya-singh-748b59217/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-gray-600 hover:border-accent transition rounded-lg"
-          >
-            LinkedIn
-          </a>
-
-        </div>
-
-        {/* Optional direct info */}
-        <div className="mt-8 text-sm text-secondary">
-          <p>Email: shrsingh0990@gmail.com</p>
+        <div className="flex justify-center gap-8 text-sm tracking-widest">
+          <a href="mailto:shrsingh0990@gmail.com" className="hover:text-gold">Email</a>
+          <a href="https://linkedin.com" className="hover:text-gold">LinkedIn</a>
+          <a href="https://github.com/Shreyaa-15" className="hover:text-gold">GitHub</a>
+          <a href="#" className="hover:text-gold">Resume</a>
         </div>
 
       </div>

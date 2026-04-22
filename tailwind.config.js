@@ -6,14 +6,16 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "#0D0D0D",
-        primary: "#EDEDED",
-        secondary: "#A1A1AA",
-        accent: "#C4A484",   // coffee tone
-        card: "#1A1A1A"
-      }
-    },
+  colors: {
+    espresso: "#1a0a00",
+    darkRoast: "#2d1200",
+    mediumRoast: "#5c2e00",
+    gold: "#c8923a",
+    cream: "#f5ede0",
+    background: "#1a0a00",
+    primary: "#f5ede0",
+  }
+}
   },
   plugins: [],
 }
