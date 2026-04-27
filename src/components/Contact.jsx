@@ -13,7 +13,7 @@ const Contact = () => {
         </h2>
 
         <p className="text-gray-400 mb-10">
-          Currently open to FAANG & top-tier engineering roles
+          Available to brew something new — SWE · ML · Freelance
         </p>
 
         <div className="flex justify-center gap-8 text-sm tracking-widest">

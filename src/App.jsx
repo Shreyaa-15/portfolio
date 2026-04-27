@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import MouseGlow from "./components/MouseGlow";
 import Cursor from "./components/Cursor";
+import Certifications from "./components/Certifications";
 import "./styles/global.css";
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
       {/* Main Sections */}
       <main className="pt-20"> 
         <Hero />
-        <About /> 
-        <Skills />
+        <About />
         <Projects />
+        <Skills />
+        <Certifications />
         <Contact />
       </main>
 

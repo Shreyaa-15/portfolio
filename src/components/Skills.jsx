@@ -14,7 +14,7 @@ const Skills = () => {
         </h2>
 
         <p className="text-gray-400 max-w-2xl mb-12">
-          Every great system starts with the right fundamentals — depth-first, always.
+          Every great system starts with the right fundamentals — from APIs to distributed pipelines.
         </p>
 
         {/* GRID */}
@@ -24,9 +24,10 @@ const Skills = () => {
           <div>
             <p className="text-xs text-gold mb-4">Beans</p>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Java / Python / C++</li>
-              <li>JavaScript / TypeScript</li>
-              <li>ServiceNow / Glide</li>
+              <li>Java / Python</li>
+              <li>TypeScript / JavaScript</li>
+              <li>SQL</li>
+              <li>ServiceNow (Glide)</li>
             </ul>
           </div>
 
@@ -34,9 +35,12 @@ const Skills = () => {
           <div>
             <p className="text-xs text-gold mb-4">Method</p>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Microservices</li>
+              <li>System Design & Scalability</li>
+              <li>Microservices & Distributed Systems</li>
               <li>Event-Driven Architecture</li>
-              <li>System Design</li>
+              <li>REST API Design</li>
+              <li>Data Pipelines & ETL</li>
+              <li>Machine Learning Pipelines</li>
             </ul>
           </div>
 
@@ -44,9 +48,12 @@ const Skills = () => {
           <div>
             <p className="text-xs text-gold mb-4">Tools</p>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>Docker / Kubernetes</li>
-              <li>Kafka / Redis</li>
-              <li>PostgreSQL / MongoDB</li>
+              <li>Spring Boot / FastAPI</li>
+              <li>Node.js / React</li>
+              <li>Docker / Kafka / Redis</li>
+              <li>PostgreSQL / MongoDB / MySQL</li>
+              <li>Git / CI-CD (GitHub Actions, Jenkins)</li>
+              <li>Apache Spark</li>
             </ul>
           </div>
 
