@@ -67,7 +67,7 @@ const ProjectCard = ({ p, i }) => {
 
         {/* INDEX */}
         <span className="absolute top-6 right-6 text-xs text-gray-500 tracking-widest">
-          {p.id} / 05
+          {p.id} / 07
         </span>
 
         {/* TAG */}
